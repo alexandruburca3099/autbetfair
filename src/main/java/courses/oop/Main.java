@@ -35,5 +35,14 @@ public class Main {
         Teacher teacher = new Teacher("Bob Marley", "111225569916543", Gender.MASCULIN, "2", "Math");
         System.out.println(student);
         System.out.println(teacher);
+        Shape shapePol1 = new Shape();
+        Shape shapePol2 = new Square("RED");
+        Shape shapePol3 = new Triangle();
+
+        shapePol1.draw();
+        shapePol2.draw();
+        shapePol3.draw();
+//          parent cannot access methods from child that are not defined on himself
+        Shape shapeCircle = new Circle();
     }
 }
